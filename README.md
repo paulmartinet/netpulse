@@ -14,5 +14,26 @@ NetPulse is a network diagnostic tool designed to perform DNS resolution, ping t
 2. Clone the repository:
 
    ```bash
-   git clone https://github.com/paulmartinet/netpulse.git
-   cd netpulse
+
+      git clone https://github.com/paulmartinet/netpulse.git
+      cd netpulse
+
+2.  Build the project: 
+
+   bash
+   
+      cargo build --release
+
+## Usage
+
+Run the command with the desired options:
+
+   bash 
+   
+      ./target/release/netpulse <domain> [--dns <dns_server>] [--ping] [--traceroute]
+
+Example
+
+bash
+
+      ./target/release/netpulse google.com --dns 8.8.8.8 --ping --traceroute
