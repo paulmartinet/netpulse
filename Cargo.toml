@@ -1,0 +1,10 @@
+[package]
+name = "netpulse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.20", features = ["derive"] }
+trust-dns-resolver = "0.21"  # pour les requêtes DNS
+tokio = { version = "1", features = ["full"] }  # pour l'asynchronisme
+pinger = "0.4"  # pour le ping
