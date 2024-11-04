@@ -20,20 +20,16 @@ NetPulse is a network diagnostic tool designed to perform DNS resolution, ping t
 
 2.  Build the project: 
 
-   bash
+     ```bash
    
       cargo build --release
 
 ## Usage
 
-Run the command with the desired options:
-
-   bash 
+Run the command with the desired options: 
    
       ./target/release/netpulse <domain> [--dns <dns_server>] [--ping] [--traceroute]
 
 Example
-
-bash
 
       ./target/release/netpulse google.com --dns 8.8.8.8 --ping --traceroute
